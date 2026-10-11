@@ -299,6 +299,7 @@ void hist_eq(float *in, int h, int w)
     }
     float sk[256] = {0}; // 累计直方图数组，初始化为0
     int s[256] = {0}; // 映射数组，初始化为0
+    //灰度累积分布频率
     for (int i = 0; i < 256; i++)
     {
         for (int j = 0; j < i; j++)
