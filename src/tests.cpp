@@ -256,7 +256,7 @@ void resize(float *in, float *out, int h, int w, int c, float scale)
             {
                 float dx = x0 - x1;
                 float dy = y0 - y1;
-                for (int t = -1; t < 2; t++)
+                for (int t = 0; t < 3; t++)
                 {
                     float P1 = in[(x1 * w + y1) * 3 + t];
                     float P2 = in[(x1 * w + y2) * 3 + t];
